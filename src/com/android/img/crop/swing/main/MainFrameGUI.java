@@ -2,14 +2,19 @@ package com.android.img.crop.swing.main;
 
 import com.android.img.crop.model.Config;
 import com.android.img.crop.model.ConfigItem;
+import com.android.img.crop.swing.loading.LoadingDialog;
 import com.android.img.crop.swing.setting.SettingFrameGUI;
 import com.android.img.crop.utils.ConfigUtils;
-import com.android.img.crop.utils.RxBus;
+import com.android.img.crop.utils.GenerateBuilder;
+import com.android.img.crop.utils.GenerateTool;
+import com.android.img.crop.bus.RxBus;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
@@ -17,6 +22,7 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.*;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -28,7 +34,7 @@ import java.util.List;
  *     version: 1.0
  * </pre>
  */
-public class MainFrameGUI {
+public class MainFrameGUI{
     private JTextField srcDirField;
     private JButton chooseInput;
     private JTextField outDirField;
@@ -47,8 +53,14 @@ public class MainFrameGUI {
     private JLabel heightLabel;
     private JLabel cropLabel;
     private JPanel sizePanel;
+    private JCheckBox allSelectBox;
+    private JCheckBox noAllSelectBox;
 
-    //目录文件拖拽Handler
+    private GenerateTool mGenerateTool;
+
+    private LoadingDialog dialog = null;
+
+            //目录文件拖拽Handler
     TransferHandler dirTransferHandler = new TransferHandler() {
         @Override
         public boolean importData(JComponent comp, Transferable t) {
@@ -132,7 +144,7 @@ public class MainFrameGUI {
 
     private Disposable subscribe = null;
 
-    public MainFrameGUI(JFrame frame,Config config) {
+    public MainFrameGUI(final JFrame frame, final Config config) {
         this.mConfig = config;
         this.mFrame = frame;
 
@@ -153,7 +165,9 @@ public class MainFrameGUI {
             public void actionPerformed(ActionEvent e) {
                 JFileChooser jfc = new JFileChooser();
                 jfc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-                jfc.showDialog(new JLabel(), "选择");
+                jfc.setDialogTitle("选择目录");
+//                jfc.showDialog(new JLabel(), "选择");
+                jfc.showOpenDialog(new JLabel());
                 File file = jfc.getSelectedFile();
                 if (file != null) {
                     srcDirField.setText(file.getAbsolutePath());
@@ -165,7 +179,9 @@ public class MainFrameGUI {
             public void actionPerformed(ActionEvent e) {
                 JFileChooser jfc = new JFileChooser();
                 jfc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-                jfc.showDialog(new JLabel(), "选择");
+                jfc.setDialogTitle("选择目录");
+//                jfc.showDialog(new JLabel(), "选择");
+                jfc.showOpenDialog(new JLabel());
                 File file = jfc.getSelectedFile();
                 if (file != null) {
                     outDirField.setText(file.getAbsolutePath());
@@ -188,24 +204,85 @@ public class MainFrameGUI {
                 }
             }
         });
+        allSelectBox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (allSelectBox.isSelected()) {
+                    int componentCount = sizePanel.getComponentCount();
+                    for (int i = 0; i < componentCount; i++) {
+                        JCheckBox box = (JCheckBox)sizePanel.getComponent(i);
+                        box.setSelected(true);
+                    }
+                    noAllSelectBox.setSelected(false);
+                }
+            }
+        });
+
+        noAllSelectBox.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                if (noAllSelectBox.isSelected()) {
+                    int componentCount = sizePanel.getComponentCount();
+                    for (int i = 0; i < componentCount; i++) {
+                        JCheckBox box = (JCheckBox)sizePanel.getComponent(i);
+                        box.setSelected(false);
+                    }
+                    allSelectBox.setSelected(false);
+                }
+            }
+        });
+
         initSize();
 
 
         okButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-
+                String srcFilePath = srcDirField.getText();
+                String distFilePath = outDirField.getText();
+                String iconName = iconNameField.getText();
+                int designSizeIndex = designBox.getSelectedIndex();
+                List<ConfigItem> configItems = new ArrayList<>();
+                int componentCount = sizePanel.getComponentCount();
+                for (int i = 0; i < componentCount; i++) {
+                    JCheckBox box = (JCheckBox)sizePanel.getComponent(i);
+                    if (box.isSelected()) {
+                        configItems.add(mConfig.getSizeItem().get(i));
+                    }
+                }
+                if (configItems.size() <= 0) {
+                    JOptionPane.showMessageDialog(null, "请选择生成尺寸!", "提示",
+                            JOptionPane.ERROR_MESSAGE);
+                } else if ("".equals(srcFilePath)) {
+                    JOptionPane.showMessageDialog(null, "请选择图片目录!", "提示",
+                            JOptionPane.ERROR_MESSAGE);
+                } else if ("".equals(distFilePath)) {
+                    JOptionPane.showMessageDialog(null, "请选择图片生成目标目录!", "提示",
+                            JOptionPane.ERROR_MESSAGE);
+                }
+                else{
+                    okButton.setEnabled(false);
+                    GenerateBuilder builder = new GenerateBuilder();
+                    mGenerateTool = builder.setCurrentMode(mConfig.getSizeItem().get(designSizeIndex))
+                            .setGenerateModels(configItems)
+                            .setRootPath(srcFilePath)
+                            .setIconName(iconName)
+                            .setSaveFile(new File(distFilePath))
+                            .setRecursion(mConfig.isRecursive())
+                            .setAutoAddSuffix(mConfig.isAutoSuffix())
+                            .setCover(mConfig.isCover())
+                            .setTolerance(mConfig.getTolerance())
+                            .createTool();
+                    mGenerateTool.startGenerate();
+                }
             }
         });
 
-        subscribe = RxBus.get().toObservable(String.class).subscribe(new Consumer<String>() {
+        subscribe = RxBus.getDefault().toObservable(SettingFrameGUI.MSG_SETTING_SAVE,Object.class).subscribe(new Consumer<Object>() {
             @Override
-            public void accept(String s) throws Exception {
-                if (SettingFrameGUI.MSG_SETTING_SAVE.equals(s)) {
-                    mConfig = ConfigUtils.getConfigByDefault();
-                    initSize();
-                }
+            public void accept(Object s) throws Exception {
+                mConfig = ConfigUtils.getConfigByDefault();
+                initSize();
             }
         });
 
@@ -218,7 +295,26 @@ public class MainFrameGUI {
                 super.windowClosing(e);
             }
         });
+        RxBus.getDefault().toObservable(GenerateTool.MSG_CROP_START,Object.class).subscribe(new Consumer<Object>() {
+            @Override
+            public void accept(Object s) throws Exception {
+                generateStart();
+            }
+        });
 
+        RxBus.getDefault().toObservable(GenerateTool.MSG_CROP_COMPLETE, Object.class).subscribe(new Consumer<Object>() {
+            @Override
+            public void accept(Object obj) throws Exception {
+                okButton.setEnabled(true);
+            }
+        });
+
+        RxBus.getDefault().toObservable(LoadingDialog.MSG_CROP_CANCEL, Object.class).subscribe(new Consumer<Object>() {
+            @Override
+            public void accept(Object obj) throws Exception {
+                okButton.setEnabled(true);
+            }
+        });
 
     }
 
@@ -236,4 +332,13 @@ public class MainFrameGUI {
             }
         }
     }
+
+    public void generateStart() {
+        dialog = new LoadingDialog(mFrame);
+        dialog.pack();
+        dialog.setLocationRelativeTo(mFrame.getOwner());
+        dialog.setVisible(true);
+        dialog.setLocationRelativeTo(null);
+    }
+
 }

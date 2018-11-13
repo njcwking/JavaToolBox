@@ -172,8 +172,7 @@
           </component>
         </children>
       </grid>
-      <grid id="f1bb9" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-        <margin top="10" left="10" bottom="0" right="10"/>
+      <grid id="f1bb9" layout-manager="FlowLayout" hgap="10" vgap="10" flow-align="0">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -181,18 +180,23 @@
         <border type="none"/>
         <children>
           <component id="9e31d" class="javax.swing.JLabel" binding="cropLabel">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
+            <constraints/>
             <properties>
               <text value="裁剪尺寸："/>
             </properties>
           </component>
-          <hspacer id="4f034">
-            <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
+          <component id="85378" class="javax.swing.JCheckBox" binding="allSelectBox">
+            <constraints/>
+            <properties>
+              <text value="全选"/>
+            </properties>
+          </component>
+          <component id="83a9" class="javax.swing.JCheckBox" binding="noAllSelectBox">
+            <constraints/>
+            <properties>
+              <text value="全不选"/>
+            </properties>
+          </component>
         </children>
       </grid>
       <grid id="8a535" binding="sizePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">

@@ -60,7 +60,7 @@ public class VersionUtils {
                 e2.printStackTrace();
             }
             SSLSocketFactory ssf = ctx.getSocketFactory();
-            URL url = new URL("https://raw.githubusercontent.com/njcwking/JavaToolBox/master/Resources/version.xml");
+            URL url = new URL("https://raw.githubusercontent.com/njcwking/JavaToolBox/master/src/xml/version.xml");
             HttpsURLConnection urlConnection = (HttpsURLConnection) url.openConnection();
             urlConnection.setSSLSocketFactory(ssf);
             urlConnection.setHostnameVerifier(new HostnameVerifier() {
@@ -147,7 +147,7 @@ public class VersionUtils {
                 updateTime = updateTimeElement.getText();
             }
         }
-        if (versionCode != 0 && versionName != null && updateTime != null) {
+        if (versionCode >=0 && versionName != null && updateTime != null) {
             version = new Version(versionCode, versionName, updateTime);
         }
         return version;

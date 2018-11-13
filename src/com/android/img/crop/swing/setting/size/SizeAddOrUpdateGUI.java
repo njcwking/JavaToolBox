@@ -2,7 +2,7 @@ package com.android.img.crop.swing.setting.size;
 
 import com.android.img.crop.model.Config;
 import com.android.img.crop.model.ConfigItem;
-import com.android.img.crop.utils.RxBus;
+import com.android.img.crop.bus.RxBus;
 import com.android.img.crop.utils.ValidationUtils;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -86,7 +86,7 @@ public class SizeAddOrUpdateGUI {
                         mConfigItem.setSuffix(suffix);
                         JOptionPane.showMessageDialog(mFrame, "修改成功", "提示", JOptionPane.INFORMATION_MESSAGE);
                         mFrame.dispose();
-                        RxBus.get().post(mConfig);
+                        RxBus.getDefault().post(mConfig);
                     }
                     else{
                         ConfigItem item = new ConfigItem();
@@ -99,7 +99,7 @@ public class SizeAddOrUpdateGUI {
                         mConfig.getSizeItem().add(item);
                         JOptionPane.showMessageDialog(mFrame, "添加成功", "提示", JOptionPane.INFORMATION_MESSAGE);
                         mFrame.dispose();
-                        RxBus.get().post(mConfig);
+                        RxBus.getDefault().post(mConfig);
                     }
                 }
             }

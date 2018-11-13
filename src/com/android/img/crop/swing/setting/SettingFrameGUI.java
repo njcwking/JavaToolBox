@@ -4,8 +4,7 @@ import com.android.img.crop.model.Config;
 import com.android.img.crop.model.ConfigItem;
 import com.android.img.crop.swing.setting.size.SizeAddOrUpdateFrame;
 import com.android.img.crop.utils.ConfigUtils;
-import com.android.img.crop.utils.FileUtils;
-import com.android.img.crop.utils.RxBus;
+import com.android.img.crop.bus.RxBus;
 import com.android.img.crop.utils.ValidationUtils;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
@@ -20,7 +19,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.*;
-import java.util.Arrays;
 import java.util.Vector;
 
 import static com.android.img.crop.utils.ConfigUtils.INSTALL_PATH;
@@ -50,6 +48,7 @@ public class SettingFrameGUI {
     private JButton restoreButton;
     private JButton updateButton;
     private JTextField toleranceField;
+    private JScrollPane scrollPane;
 
     private String recursiveDesc = "<html>递归文件夹指在进行图片处理时，<br/>如果选择的文件夹内包含更多的图片文<br/>件夹，如果选择递归则会将子文件夹<br/>中的图片一并进行处理。</html>";
 
@@ -71,9 +70,11 @@ public class SettingFrameGUI {
 
         initData(config);
 
+        scrollPane.setViewportView(sizeTable);
+
         initListener(config);
 
-        subscribe = RxBus.get().toObservable(Config.class).subscribe(new Consumer<Config>() {
+        subscribe = RxBus.getDefault().toObservable(Config.class).subscribe(new Consumer<Config>() {
             @Override
             public void accept(Config config) throws Exception {
                 if (config != null) {
@@ -88,7 +89,7 @@ public class SettingFrameGUI {
         recursiveButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, recursiveDesc, "递归文件夹", JOptionPane.QUESTION_MESSAGE);
+                JOptionPane.showMessageDialog(null, recursiveDesc, "递归文件夹", JOptionPane.PLAIN_MESSAGE);
             }
         });
 
@@ -102,7 +103,7 @@ public class SettingFrameGUI {
         coverButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, coverDesc, "覆盖文件", JOptionPane.QUESTION_MESSAGE);
+                JOptionPane.showMessageDialog(null, coverDesc, "覆盖文件", JOptionPane.PLAIN_MESSAGE);
             }
         });
 
@@ -116,7 +117,7 @@ public class SettingFrameGUI {
         suffixButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, suffixDesc, "文件后缀", JOptionPane.QUESTION_MESSAGE);
+                JOptionPane.showMessageDialog(null, suffixDesc, "文件后缀", JOptionPane.PLAIN_MESSAGE);
             }
         });
 
@@ -213,7 +214,7 @@ public class SettingFrameGUI {
                         mConfig = ConfigUtils.getConfigByDefault();
                         JOptionPane.showMessageDialog(mFrame, "恢复默认设置成功", "提示", JOptionPane.PLAIN_MESSAGE);
                         initData(mConfig);
-                        RxBus.get().post(MSG_SETTING_SAVE);
+                        RxBus.getDefault().post(MSG_SETTING_SAVE,new Object());
                     } else {
                         JOptionPane.showMessageDialog(mFrame, "恢复默认设置失败", "提示", JOptionPane.ERROR_MESSAGE);
                     }
@@ -228,7 +229,7 @@ public class SettingFrameGUI {
                     mConfig.setTolerance(Integer.valueOf(toleranceStr));
                     if (ConfigUtils.saveConfigByDefault(mConfig)) {
                         JOptionPane.showMessageDialog(mFrame, "保存成功", "提示", JOptionPane.PLAIN_MESSAGE);
-                        RxBus.get().post(MSG_SETTING_SAVE);
+                        RxBus.getDefault().post(MSG_SETTING_SAVE,new Object());
                     } else {
                         JOptionPane.showMessageDialog(mFrame, "配置保存失败", "提示", JOptionPane.ERROR_MESSAGE);
                     }

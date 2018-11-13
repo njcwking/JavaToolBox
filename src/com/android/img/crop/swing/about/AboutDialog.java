@@ -16,7 +16,7 @@ import java.awt.*;
  */
 public class AboutDialog extends JDialog {
     public AboutDialog(Frame owner, String title) {
-        super(owner, title);
+        super(owner, title,true);
         setContentPane(new AboutDialogGUI().rootPanel);
         pack();
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

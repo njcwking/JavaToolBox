@@ -7,7 +7,7 @@
 			iconWidth="96" />
 		<model name="xxhdpi" width="1080" height="1920" folder="drawable-xxhdpi"
 			iconWidth="144" />
-		<model name="xxhdpi" width="1440" height="2560" folder="drawable-xxxhdpi"
+		<model name="xxxhdpi" width="1440" height="2560" folder="drawable-xxxhdpi"
 			   iconWidth="192"/>
 		<model name="iPhone4,4s" width="640" height="960" folder="iPhone4 2x"
 			   iconWidth="192" suffix="@2x"/>
