@@ -1,5 +1,7 @@
 package com.android.img.crop.swing.about;
 
+import com.android.img.crop.utils.VersionUtils;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -22,6 +24,7 @@ public class AboutDialogGUI {
     public JPanel rootPanel;
     private JLabel iconLabel;
     private JLabel linkLabel;
+    private JLabel versionLabel;
 
     /** 保存标签的默认颜色 */
     private Color preColor = null;
@@ -32,6 +35,7 @@ public class AboutDialogGUI {
 
     public AboutDialogGUI() {
 
+        versionLabel.setText("版本："+VersionUtils.getVersionFromXml().getVersionName());
         linkLabel.setText(text);
         try {
             link = new URL("https://github.com/njcwking/JavaToolBox");

@@ -29,5 +29,6 @@
 		<setting_recursive>true</setting_recursive>
 		<setting_cover>true</setting_cover>
 		<setting_auto_add_suffix>false</setting_auto_add_suffix>
+		<setting_tolerance>0</setting_tolerance>
 	</setting>
 </config>

@@ -119,6 +119,10 @@ public class ConfigUtils {
             if (suffixElement != null) {
                 config.setAutoSuffix(Boolean.parseBoolean(suffixElement.getText()));
             }
+            Element toleranceElement = settingElement.element("setting_tolerance");
+            if (toleranceElement != null) {
+                config.setTolerance(Integer.parseInt(toleranceElement.getText()));
+            }
         }
         return config;
     }
@@ -152,6 +156,8 @@ public class ConfigUtils {
         coverElement.setText(String.valueOf(config.isCover()));
         Element suffixElement = settingConfig.addElement("setting_auto_add_suffix");
         suffixElement.setText(String.valueOf(config.isAutoSuffix()));
+        Element toleranceElement = settingConfig.addElement("setting_tolerance");
+        toleranceElement.setText(String.valueOf(config.getTolerance()));
 
         OutputFormat format = OutputFormat.createPrettyPrint();
         format.setEncoding("UTF-8");

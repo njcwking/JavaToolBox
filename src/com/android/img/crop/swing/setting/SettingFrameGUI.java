@@ -6,6 +6,7 @@ import com.android.img.crop.swing.setting.size.SizeAddOrUpdateFrame;
 import com.android.img.crop.utils.ConfigUtils;
 import com.android.img.crop.utils.FileUtils;
 import com.android.img.crop.utils.RxBus;
+import com.android.img.crop.utils.ValidationUtils;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 
@@ -48,6 +49,7 @@ public class SettingFrameGUI {
     private JTable sizeTable;
     private JButton restoreButton;
     private JButton updateButton;
+    private JTextField toleranceField;
 
     private String recursiveDesc = "<html>递归文件夹指在进行图片处理时，<br/>如果选择的文件夹内包含更多的图片文<br/>件夹，如果选择递归则会将子文件夹<br/>中的图片一并进行处理。</html>";
 
@@ -221,12 +223,20 @@ public class SettingFrameGUI {
         saveButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (ConfigUtils.saveConfigByDefault(mConfig)) {
-                    JOptionPane.showMessageDialog(mFrame, "保存成功", "提示", JOptionPane.PLAIN_MESSAGE);
-                    RxBus.get().post(MSG_SETTING_SAVE);
-                } else {
-                    JOptionPane.showMessageDialog(mFrame, "配置保存失败", "提示", JOptionPane.ERROR_MESSAGE);
+                String toleranceStr = toleranceField.getText().trim();
+                if (ValidationUtils.isNumeric(toleranceStr) && Integer.valueOf(toleranceStr) >= 0) {
+                    mConfig.setTolerance(Integer.valueOf(toleranceStr));
+                    if (ConfigUtils.saveConfigByDefault(mConfig)) {
+                        JOptionPane.showMessageDialog(mFrame, "保存成功", "提示", JOptionPane.PLAIN_MESSAGE);
+                        RxBus.get().post(MSG_SETTING_SAVE);
+                    } else {
+                        JOptionPane.showMessageDialog(mFrame, "配置保存失败", "提示", JOptionPane.ERROR_MESSAGE);
+                    }
                 }
+                else{
+                    JOptionPane.showMessageDialog(mFrame, "容差输入格式有误，请输入大于等于0的整数。", "提示", JOptionPane.ERROR_MESSAGE);
+                }
+
             }
         });
         mFrame.addWindowListener(new WindowAdapter() {
@@ -244,6 +254,7 @@ public class SettingFrameGUI {
         recursiveCheckBox.setSelected(mConfig.isRecursive());
         coverCheckBox.setSelected(mConfig.isCover());
         suffixCheckBox.setSelected(mConfig.isAutoSuffix());
+        toleranceField.setText(String.valueOf(mConfig.getTolerance()));
         initTable(config);
     }
 
@@ -258,9 +269,9 @@ public class SettingFrameGUI {
             for (ConfigItem configItem : config.getSizeItem()) {
                 Vector data = new Vector();
                 data.addElement(configItem.getName());
-                data.addElement(String.format("%d px x %d px", configItem.getWidth(), configItem.getHeight()));
+                data.addElement(String.format("%d  x %d ", configItem.getWidth(), configItem.getHeight()));
                 data.addElement(configItem.getFolderName());
-                data.addElement(String.format("%d px x %d px", configItem.getIconWidth(), configItem.getIconWidth()));
+                data.addElement(String.format("%d  x %d ", configItem.getIconWidth(), configItem.getIconWidth()));
                 data.addElement(configItem.getSuffix() == null ? "" : configItem.getSuffix());
                 rowData.add(data);
             }

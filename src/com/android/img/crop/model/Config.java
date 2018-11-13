@@ -17,6 +17,10 @@ public class Config {
     private boolean recursive;
     private boolean cover;
     private boolean autoSuffix;
+    /**
+     * 容差值
+     */
+    private int tolerance;
 
     public List<ConfigItem> getSizeItem() {
         return sizeItem;
@@ -56,5 +60,13 @@ public class Config {
 
     public void setAutoSuffix(boolean autoSuffix) {
         this.autoSuffix = autoSuffix;
+    }
+
+    public int getTolerance() {
+        return tolerance;
+    }
+
+    public void setTolerance(int tolerance) {
+        this.tolerance = tolerance;
     }
 }

@@ -2,9 +2,11 @@ package com.android.img.crop.swing.main;
 
 import com.android.img.crop.model.Config;
 import com.android.img.crop.model.ConfigItem;
+import com.android.img.crop.model.Version;
 import com.android.img.crop.swing.about.AboutDialog;
 import com.android.img.crop.swing.setting.SettingFrame;
 import com.android.img.crop.utils.ConfigUtils;
+import com.android.img.crop.utils.VersionUtils;
 import sun.net.www.http.HttpClient;
 
 import javax.net.ssl.*;
@@ -77,38 +79,29 @@ public class MainFrame extends JFrame {
         versionItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                try {
-                    SSLContext ctx = null;
-                    try {
-                        ctx = SSLContext.getInstance("TLS");
-                        ctx.init(new KeyManager[0], new TrustManager[] { new DefaultTrustManager() }, new SecureRandom());
-                    } catch (KeyManagementException e1) {
-                        e1.printStackTrace();
-                    } catch (NoSuchAlgorithmException e2) {
-                        e2.printStackTrace();
-                    }
-                    SSLSocketFactory ssf = ctx.getSocketFactory();
-                    URL url = new URL("https://raw.githubusercontent.com/njcwking/JavaToolBox/master/Resources/version.xml");
-                    HttpsURLConnection urlConnection = (HttpsURLConnection) url.openConnection();
-                    urlConnection.setSSLSocketFactory(ssf);
-                    urlConnection.setHostnameVerifier(new HostnameVerifier() {
-                        @Override
-                        public boolean verify(String arg0, SSLSession arg1) {
-                            return true;
+                Version remoteVersion = VersionUtils.getVersionFromGitHub();
+                if (remoteVersion == null) {
+                    JOptionPane.showMessageDialog(MainFrame.this, "无法获取版本信息，请检查网络连接", "提示",
+                            JOptionPane.ERROR_MESSAGE);
+                }
+                else{
+                    Version localVersion = VersionUtils.getVersionFromXml();
+                    if (localVersion.getVersionCode() < remoteVersion.getVersionCode()) {
+                        int n = JOptionPane.showConfirmDialog(MainFrame.this, String.format("最新版本：%s\n是否更新？",remoteVersion.getVersionName()), "版本更新", JOptionPane.YES_NO_OPTION);
+                        if (n == JOptionPane.YES_OPTION) {
+                            try {
+                                Desktop.getDesktop().browse(new URL("https://github.com/njcwking/JavaToolBox/blob/master/Resources/runJar").toURI());
+                            } catch (IOException err) {
+                                err.printStackTrace();
+                            } catch (URISyntaxException err) {
+                                err.printStackTrace();
+                            }
                         }
-                    });
-                    urlConnection.setRequestMethod("GET");
-                    urlConnection.setDoInput(true);
-                    urlConnection.setDoOutput(true);
-                    urlConnection.setUseCaches(false);
-                    InputStream inputStream = urlConnection.getInputStream();
-                    byte[] buffer = new byte[1024];
-                    int len = 0;
-                    while ((len = inputStream.read(buffer)) > 0) {
-                        System.out.println(new String(buffer, 0, len, "utf-8"));
                     }
-                } catch (IOException e1) {
-                    e1.printStackTrace();
+                    else{
+                        JOptionPane.showMessageDialog(MainFrame.this, "当前版本已经是最新版本", "提示",
+                                JOptionPane.PLAIN_MESSAGE);
+                    }
                 }
             }
         });
@@ -143,20 +136,7 @@ public class MainFrame extends JFrame {
         setLocationRelativeTo(null);
 
     }
-    private static final class DefaultTrustManager implements X509TrustManager {
-        @Override
-        public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
-        }
 
-        @Override
-        public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
-        }
-
-        @Override
-        public X509Certificate[] getAcceptedIssuers() {
-            return null;
-        }
-    }
     public static void main(String[] args) {
         new MainFrame().setVisible(true);
     }
