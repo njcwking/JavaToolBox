@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<img_config>
+		<model name="hdpi" width="480" height="800" folder="drawable-hdpi"
+			iconWidth="72" />
+		<model name="xhdpi" width="720" height="1280" folder="drawable-xhdpi"
+			iconWidth="96" />
+		<model name="xxhdpi" width="1080" height="1920" folder="drawable-xxhdpi"
+			iconWidth="144" />
+		<model name="xxhdpi" width="1440" height="2560" folder="drawable-xxxhdpi"
+			   iconWidth="192"/>
+		<model name="iPhone4,4s" width="640" height="960" folder="iPhone4 2x"
+			   iconWidth="192" suffix="@2x"/>
+		<model name="iPhone5,5s,5c,SE" width="640" height="1136" folder="iPhone5 2x"
+			   iconWidth="192" suffix="@2x"/>
+		<model name="iPhone6,6s,7,8" width="750" height="1134" folder="iPhone6 2x"
+			   iconWidth="192" suffix="@2x"/>
+		<model name="iPhone6+,6s+,7+,8+" width="1242" height="2208" folder="iPhone6Plus 3x"
+			   iconWidth="192" suffix="@3x"/>
+		<model name="iPhoneX,XS" width="1125" height="2436" folder="iPhoneX 3x"
+			   iconWidth="192" suffix="@3x"/>
+		<model name="iPhoneXR" width="828" height="1792" folder="iPhoneXR 2x"
+			   iconWidth="192" suffix="@2x"/>
+		<model name="iPhoneXS Max" width="1242" height="2688" folder="iPhoneXS Max 2x"
+			   iconWidth="192" suffix="@2x"/>
+	</img_config>
+	<setting>
+		<setting_default_icon_name>ic_launcher.png</setting_default_icon_name>
+		<setting_recursive>true</setting_recursive>
+		<setting_cover>true</setting_cover>
+		<setting_auto_add_suffix>false</setting_auto_add_suffix>
+	</setting>
+</config>
