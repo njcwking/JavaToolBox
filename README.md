@@ -6,7 +6,7 @@
 1. 自动裁剪多分辨率图片；
 2. 添加设置功能；
 3. 可配置分辨率；
-4. 自动添加iOS中的"@2x"/"@3x"文件名后缀；
+4. 自动添加iOS中的`"@2x"/"@3x"`文件名后缀；
 5. 版本更新提醒；
 
 ### 版本更新
@@ -23,12 +23,15 @@
 ### 截图
 <img src="./Resources/screenshots/裁图工具.png" alt="截图工具" width="600px" height="350px"/>
 
-<img src="./Resources/screenshots/裁图设置.png" alt="裁图设置" width="650px" height="700px"/>
+<img src="./Resources/screenshots/裁图设置.png" alt="裁图设置" width="650px" height="800px"/>
 
 
 ### 增强功能（待开发）
+#### 裁剪工具
 * 在多平台上安装右键菜单
 * 应用程序图标生成工具（自动生成所有尺寸[圆角]图标）
 * 自动生成iOS图片的.appiconset和.imageset文件夹
 * 增加图片压缩比例，生成更小的图片文件
 * 卸载功能
+* 使用说明
+* 用户操作行为记录（常选哪些分辨率），智能选择
