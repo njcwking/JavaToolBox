@@ -43,7 +43,7 @@ public class MainFrame extends JFrame {
         setTitle("JavaToolBox");
         setContentPane(new MainFrameGUI(this, config).rootPanel);
         //添加菜单栏
-        jm = new JMenu("JavaToolBox");
+        jm = new JMenu("更多选项");
         JMenuItem aboutItem = new JMenuItem("关于");
         jm.add(aboutItem);
         aboutItem.addActionListener(new ActionListener() {

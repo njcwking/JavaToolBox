@@ -20,9 +20,10 @@
         <counts>
           <entry key="project.closed" value="4" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -30,7 +31,7 @@
           <entry key="class" value="22" />
           <entry key="form" value="21" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="176" />
+          <entry key="java" value="177" />
           <entry key="md" value="6" />
           <entry key="png" value="9" />
           <entry key="txt" value="1" />
@@ -43,7 +44,7 @@
           <entry key="GUI_DESIGNER_FORM" value="21" />
           <entry key="Git file" value="1" />
           <entry key="Image" value="9" />
-          <entry key="JAVA" value="176" />
+          <entry key="JAVA" value="177" />
           <entry key="Markdown" value="6" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="19" />
@@ -54,7 +55,7 @@
           <entry key="dummy" value="40" />
           <entry key="form" value="18" />
           <entry key="gitignore" value="23" />
-          <entry key="java" value="15478" />
+          <entry key="java" value="15482" />
           <entry key="md" value="734" />
           <entry key="xml" value="437" />
         </counts>
@@ -63,7 +64,7 @@
         <counts>
           <entry key="GUI_DESIGNER_FORM" value="18" />
           <entry key="Git file" value="23" />
-          <entry key="JAVA" value="15478" />
+          <entry key="JAVA" value="15482" />
           <entry key="Markdown" value="734" />
           <entry key="PLAIN_TEXT" value="40" />
           <entry key="XML" value="437" />
@@ -75,7 +76,20 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/njcwking/box/crop/swing/main/MainFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -172,9 +186,9 @@
         <option value="$PROJECT_DIR$/src/com/android/img/crop/swing/main/MainFrameGUI.form" />
         <option value="$PROJECT_DIR$/src/xml/version.xml" />
         <option value="$PROJECT_DIR$/src/com/njcwking/img/crop/swing/main/MainFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/njcwking/box/crop/swing/main/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/com/njcwking/box/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/com/njcwking/box/crop/swing/main/MainFrame.java" />
       </list>
     </option>
   </component>
@@ -184,7 +198,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="35" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
@@ -195,23 +209,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="AndroidImageCropModule" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidImageCropModule" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidImageCropModule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidImageCropModule" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidImageCropModule" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidImageCropModule" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidImageCropModule" type="b2602c69:ProjectViewProjectNode" />
@@ -279,15 +284,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="290" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542162536916" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542162949517" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -396,53 +399,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="JavaToolBox" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="JavaToolBox" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
       <item itemvalue="Application.MainFrame" />
@@ -456,7 +412,6 @@
         <item itemvalue="Application.LoadingDialog" />
         <item itemvalue="Application.SettingFrame" />
         <item itemvalue="Application.MainFrameGUI" />
-        <item itemvalue="Application.MainFrameComponent" />
       </list>
     </recent_temporary>
   </component>
@@ -471,11 +426,12 @@
       <workItem from="1541810209149" duration="1920000" />
       <workItem from="1541815872162" duration="7801000" />
       <workItem from="1541988508355" duration="69909000" />
+      <workItem from="1542162779181" duration="136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79735000" />
+    <option name="totallyTimeSpent" value="79871000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -487,9 +443,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="23" width="1440" height="820" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="820" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18955651" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23247497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -498,7 +454,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31043956" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31043956" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -559,28 +515,8 @@
     <entry file="file://$PROJECT_DIR$/src/png/img_android_logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/CheckBoxRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/CheckBoxEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/CheckBoxRenderer.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/CheckBoxEditor.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/Container.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -647,13 +583,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/loading.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/loading.java" />
     <entry file="file://$PROJECT_DIR$/src/com/njcwking/box/crop/swing/setting/SettingFrameGUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
@@ -689,10 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
           <caret line="8406" column="19" selection-start-line="8406" selection-start-column="19" selection-end-line="8406" selection-end-column="19" />
-          <folding>
-            <element signature="e#113980#113981#0" expanded="true" />
-            <element signature="e#114027#114028#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,12 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="131" column="64" selection-start-line="131" selection-start-column="64" selection-end-line="131" selection-end-column="64" />
-          <folding>
-            <element signature="e#19888#19889#0" expanded="true" />
-            <element signature="e#19919#19920#0" expanded="true" />
-            <element signature="e#24307#24308#0" expanded="true" />
-            <element signature="e#24335#24336#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -733,23 +653,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/listener/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/listener/GenerateListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/listener/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/listener/GenerateListener.java" />
     <entry file="file://$PROJECT_DIR$/src/com/njcwking/box/crop/utils/GenerateBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1740">
@@ -787,13 +692,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/ImageCropMainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8958">
-          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/ImageCropMainFrame.java" />
     <entry file="file://$PROJECT_DIR$/src/com/njcwking/box/crop/bus/RxBus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
@@ -831,10 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="591" column="55" lean-forward="true" selection-start-line="591" selection-start-column="55" selection-end-line="591" selection-end-column="55" />
-          <folding>
-            <element signature="e#12392#12393#0" expanded="true" />
-            <element signature="e#12438#12439#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -942,13 +837,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/version.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/version.xml" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/javax/swing/JFileChooser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -995,16 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/njcwking/box/crop/swing/main/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="180" column="41" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/njcwking/box/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1023,6 +902,16 @@
             <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/njcwking/box/crop/swing/main/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
