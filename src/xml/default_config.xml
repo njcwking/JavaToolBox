@@ -13,7 +13,7 @@
 			   iconWidth="192" suffix="@2x"/>
 		<model name="iPhone5,5s,5c,SE" width="640" height="1136" folder="iPhone5 2x"
 			   iconWidth="192" suffix="@2x"/>
-		<model name="iPhone6,6s,7,8" width="750" height="1134" folder="iPhone6 2x"
+		<model name="iPhone6,6s,7,8" width="750" height="1334" folder="iPhone6 2x"
 			   iconWidth="192" suffix="@2x"/>
 		<model name="iPhone6+,6s+,7+,8+" width="1242" height="2208" folder="iPhone6Plus 3x"
 			   iconWidth="192" suffix="@3x"/>
@@ -29,6 +29,6 @@
 		<setting_recursive>true</setting_recursive>
 		<setting_cover>true</setting_cover>
 		<setting_auto_add_suffix>false</setting_auto_add_suffix>
-		<setting_tolerance>0</setting_tolerance>
+		<setting_tolerance>1</setting_tolerance>
 	</setting>
 </config>

@@ -23,10 +23,10 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="22" />
-          <entry key="form" value="20" />
+          <entry key="form" value="21" />
           <entry key="gitignore" value="1" />
           <entry key="java" value="175" />
-          <entry key="md" value="2" />
+          <entry key="md" value="5" />
           <entry key="png" value="9" />
           <entry key="txt" value="1" />
           <entry key="xml" value="19" />
@@ -35,11 +35,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="22" />
-          <entry key="GUI_DESIGNER_FORM" value="20" />
+          <entry key="GUI_DESIGNER_FORM" value="21" />
           <entry key="Git file" value="1" />
           <entry key="Image" value="9" />
           <entry key="JAVA" value="175" />
-          <entry key="Markdown" value="2" />
+          <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="19" />
         </counts>
@@ -50,7 +50,8 @@
           <entry key="form" value="18" />
           <entry key="gitignore" value="23" />
           <entry key="java" value="15471" />
-          <entry key="xml" value="434" />
+          <entry key="md" value="685" />
+          <entry key="xml" value="437" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -58,8 +59,9 @@
           <entry key="GUI_DESIGNER_FORM" value="18" />
           <entry key="Git file" value="23" />
           <entry key="JAVA" value="15471" />
+          <entry key="Markdown" value="685" />
           <entry key="PLAIN_TEXT" value="40" />
-          <entry key="XML" value="434" />
+          <entry key="XML" value="437" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -69,20 +71,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/xml/version.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state relative-caret-position="60">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/main/MainFrameGUI.form">
+          <provider selected="true" editor-type-id="ui-designer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xml/default_config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="335">
+              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -104,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/main/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="44" column="35" lean-forward="true" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+            <state relative-caret-position="43">
+              <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,14 +120,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/utils/VersionUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="62" column="112" selection-start-line="62" selection-start-column="112" selection-end-line="62" selection-end-column="112" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="315">
+                <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -201,9 +208,7 @@
         <option value="$PROJECT_DIR$/src/com/android/img/crop/swing/about/AboutDialogGUI.java" />
         <option value="$PROJECT_DIR$/src/com/android/img/crop/model/Config.java" />
         <option value="$PROJECT_DIR$/src/com/android/img/crop/utils/ConfigUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/android/img/crop/swing/main/MainFrameGUI.form" />
         <option value="$PROJECT_DIR$/src/com/android/img/crop/swing/about/AboutDialog.java" />
-        <option value="$PROJECT_DIR$/src/com/android/img/crop/swing/main/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/com/android/img/crop/swing/setting/SettingFrameGUI.form" />
         <option value="$PROJECT_DIR$/src/com/android/img/crop/listener/GenerateListener.java" />
         <option value="$PROJECT_DIR$/src/com/android/img/crop/utils/GenerateBuilder.java" />
@@ -214,13 +219,16 @@
         <option value="$PROJECT_DIR$/src/com/android/img/crop/swing/loading/LoadingDialog.form" />
         <option value="$PROJECT_DIR$/src/com/android/img/crop/swing/loading/LoadingDialog.java" />
         <option value="$PROJECT_DIR$/src/com/android/img/crop/utils/GenerateTool.java" />
-        <option value="$PROJECT_DIR$/src/xml/default_config.xml" />
         <option value="$PROJECT_DIR$/src/com/android/img/crop/swing/setting/SettingFrameGUI.java" />
         <option value="$PROJECT_DIR$/src/com/android/img/crop/utils/ImageUtils.java" />
         <option value="$PROJECT_DIR$/Resources/version.xml" />
-        <option value="$PROJECT_DIR$/src/xml/version.xml" />
         <option value="$PROJECT_DIR$/src/com/android/img/crop/swing/main/MainFrameGUI.java" />
         <option value="$PROJECT_DIR$/src/com/android/img/crop/utils/VersionUtils.java" />
+        <option value="$PROJECT_DIR$/src/xml/default_config.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/com/android/img/crop/swing/main/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/android/img/crop/swing/main/MainFrameGUI.form" />
+        <option value="$PROJECT_DIR$/src/xml/version.xml" />
       </list>
     </option>
   </component>
@@ -231,8 +239,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="91" />
-    <option name="y" value="29" />
+    <option name="x" value="35" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="820" />
   </component>
@@ -252,6 +260,12 @@
               <item name="AndroidImageCropModule" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidImageCropModule" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidImageCropModule" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidImageCropModule" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="screenshots" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidImageCropModule" type="b2602c69:ProjectViewProjectNode" />
@@ -276,7 +290,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="290" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542116960481" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542161681743" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -290,6 +304,8 @@
       <recent name="com.android.img.crop.swing" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Resources/screenshots" />
+      <recent name="$PROJECT_DIR$/Resources" />
       <recent name="$PROJECT_DIR$/src/png" />
       <recent name="$PROJECT_DIR$/libs" />
       <recent name="$PROJECT_DIR$/src/com/android/img/crop/swing/main" />
@@ -457,12 +473,12 @@
       <workItem from="1541758004017" duration="105000" />
       <workItem from="1541810209149" duration="1920000" />
       <workItem from="1541815872162" duration="7801000" />
-      <workItem from="1541988508355" duration="65056000" />
+      <workItem from="1541988508355" duration="69048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74882000" />
+    <option name="totallyTimeSpent" value="78874000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -474,10 +490,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="91" y="29" width="1440" height="820" extended-state="0" />
+    <frame x="35" y="23" width="1440" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18955651" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18955651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -507,7 +523,7 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18955651" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18955651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -544,9 +560,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/png/bg_android_image_crop.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/png/bg_jpanel.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -869,9 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/main/MainFrameGUI.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/setting/size/SizeAddOrUpdateGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -946,20 +956,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/main/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="44" column="35" lean-forward="true" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/javax/swing/JFileChooser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="150" column="28" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/utils/VersionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="62" column="112" selection-start-line="62" selection-start-column="112" selection-end-line="62" selection-end-column="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -975,27 +985,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xml/version.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/xml/default_config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="335">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/utils/VersionUtils.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/main/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="62" column="112" selection-start-line="62" selection-start-column="112" selection-end-line="62" selection-end-column="112" />
+        <state relative-caret-position="43">
+          <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/android/img/crop/swing/main/MainFrameGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xml/version.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
