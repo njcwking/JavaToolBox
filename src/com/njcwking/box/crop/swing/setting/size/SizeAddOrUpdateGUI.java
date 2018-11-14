@@ -82,7 +82,7 @@ public class SizeAddOrUpdateGUI {
                         mConfigItem.setFolderName(folderName);
                         mConfigItem.setWidth(Integer.valueOf(strWidth));
                         mConfigItem.setHeight(Integer.valueOf(strHeight));
-                        mConfigItem.setIconWidth(Integer.valueOf(strWidth));
+                        mConfigItem.setIconWidth(Integer.valueOf(strIconSize));
                         mConfigItem.setSuffix(suffix);
                         JOptionPane.showMessageDialog(mFrame, "修改成功", "提示", JOptionPane.INFORMATION_MESSAGE);
                         mFrame.dispose();
@@ -94,7 +94,7 @@ public class SizeAddOrUpdateGUI {
                         item.setFolderName(folderName);
                         item.setWidth(Integer.valueOf(strWidth));
                         item.setHeight(Integer.valueOf(strHeight));
-                        item.setIconWidth(Integer.valueOf(strWidth));
+                        item.setIconWidth(Integer.valueOf(strIconSize));
                         item.setSuffix(suffix);
                         mConfig.getSizeItem().add(item);
                         JOptionPane.showMessageDialog(mFrame, "添加成功", "提示", JOptionPane.INFORMATION_MESSAGE);
