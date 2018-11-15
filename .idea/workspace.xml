@@ -31,7 +31,7 @@
           <entry key="class" value="22" />
           <entry key="form" value="21" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="180" />
+          <entry key="java" value="181" />
           <entry key="md" value="6" />
           <entry key="png" value="9" />
           <entry key="txt" value="1" />
@@ -44,7 +44,7 @@
           <entry key="GUI_DESIGNER_FORM" value="21" />
           <entry key="Git file" value="1" />
           <entry key="Image" value="9" />
-          <entry key="JAVA" value="180" />
+          <entry key="JAVA" value="181" />
           <entry key="Markdown" value="6" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="20" />
@@ -55,7 +55,7 @@
           <entry key="dummy" value="40" />
           <entry key="form" value="18" />
           <entry key="gitignore" value="23" />
-          <entry key="java" value="15610" />
+          <entry key="java" value="15616" />
           <entry key="md" value="734" />
           <entry key="xml" value="438" />
         </counts>
@@ -64,7 +64,7 @@
         <counts>
           <entry key="GUI_DESIGNER_FORM" value="18" />
           <entry key="Git file" value="23" />
-          <entry key="JAVA" value="15610" />
+          <entry key="JAVA" value="15616" />
           <entry key="Markdown" value="734" />
           <entry key="PLAIN_TEXT" value="40" />
           <entry key="XML" value="438" />
@@ -77,18 +77,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/njcwking/box/crop/swing/main/MainFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/njcwking/box/crop/swing/setting/size/SizeAddOrUpdateFrame.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -137,11 +125,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xml/version.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/njcwking/box/crop/swing/main/MainFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -243,10 +243,10 @@
         <option value="$PROJECT_DIR$/src/com/njcwking/img/crop/swing/main/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/com/njcwking/box/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/com/njcwking/box/crop/swing/main/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/com/njcwking/box/crop/swing/setting/size/SizeAddOrUpdateGUI.java" />
         <option value="$PROJECT_DIR$/src/com/njcwking/box/crop/swing/package-info.java" />
         <option value="$PROJECT_DIR$/src/xml/version.xml" />
+        <option value="$PROJECT_DIR$/src/com/njcwking/box/crop/swing/main/MainFrame.java" />
       </list>
     </option>
   </component>
@@ -257,8 +257,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="203" />
-    <option name="y" value="133" />
+    <option name="x" value="92" />
+    <option name="y" value="113" />
     <option name="width" value="1440" />
     <option name="height" value="820" />
   </component>
@@ -345,7 +345,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="290" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542263893673" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542264394677" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -499,12 +499,12 @@
       <workItem from="1541815872162" duration="7801000" />
       <workItem from="1541988508355" duration="69909000" />
       <workItem from="1542162779181" duration="136000" />
-      <workItem from="1542185170183" duration="4746000" />
+      <workItem from="1542185170183" duration="5195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84681000" />
+    <option name="totallyTimeSpent" value="85130000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,10 +516,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="203" y="133" width="1440" height="820" extended-state="0" />
+    <frame x="92" y="113" width="1440" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23819743" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23819743" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -549,7 +549,7 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18955651" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23819743" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -949,16 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/njcwking/box/crop/swing/main/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/njcwking/box/crop/swing/setting/size/SizeAddOrUpdateFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1001,6 +991,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/njcwking/box/crop/swing/main/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

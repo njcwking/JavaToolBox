@@ -67,7 +67,7 @@ public class MainFrame extends JFrame {
                 }
             }
         });
-//        jm.add(useItem);
+        jm.add(useItem);
         versionItem = new JMenuItem("检查更新");
         jm.add(versionItem);
         versionItem.addActionListener(new ActionListener() {
