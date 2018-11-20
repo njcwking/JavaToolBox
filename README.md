@@ -36,3 +36,6 @@
 * 使用说明
 * 用户操作行为记录（常选哪些分辨率），智能选择
 * 多线程图片处理，加快图片裁剪速度
+* Android生成图片selector或颜色selector
+* Android生成level-list、shape
+* 生成9.png图片
