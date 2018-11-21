@@ -121,4 +121,7 @@
       </item>
     </group>
   </component>
+  <component name="uidesigner-configuration">
+    <option name="DEFAULT_FIELD_ACCESSIBILITY" value="protected" />
+  </component>
 </project>

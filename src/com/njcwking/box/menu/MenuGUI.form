@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.njcwking.box.menu.MenuGUI">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="998" height="545"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="22bdd" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="25"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-2611162"/>
+          <opaque value="true"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <grid id="45778" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="28937" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="png/logo.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="e665e" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="25" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <opaque value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="d3d7f" binding="scalePanel" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="line">
+              <color color="-2960686"/>
+            </border>
+            <children>
+              <component id="53fe8" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="130"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-5234138"/>
+                  <horizontalAlignment value="0"/>
+                  <icon value="png/scale_tool.png"/>
+                  <opaque value="true"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="b380e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="180" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Andale Mono" size="14" style="1"/>
+                  <horizontalAlignment value="0"/>
+                  <iconTextGap value="4"/>
+                  <text value="切图缩放工具"/>
+                  <verticalAlignment value="3"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="80990" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="180" height="60"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <text value="&lt;html&gt;&lt;center&gt;根据设计图尺寸自动生成移动端不同分辨率的图片&lt;/center&gt;&lt;/html&gt;"/>
+                </properties>
+              </component>
+              <component id="d58df" class="javax.swing.JButton" binding="scaleToolInto">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="使用"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="cd265" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <foreground color="-7237231"/>
+            </properties>
+            <border type="line">
+              <color color="-2960686"/>
+            </border>
+            <children>
+              <component id="53fe6" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="130"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-12566464"/>
+                  <horizontalAlignment value="0"/>
+                  <icon value="png/merge_tool.png"/>
+                  <opaque value="true"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="b380f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="180" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Andale Mono" size="14" style="1"/>
+                  <horizontalAlignment value="0"/>
+                  <iconTextGap value="4"/>
+                  <text value="图片集合"/>
+                  <verticalAlignment value="3"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="80991" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="180" height="60"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <text value="&lt;html&gt;&lt;center&gt;选择文件夹，同名文件生成iOS工程需要的imageset或appiconset文件夹&lt;/center&gt;&lt;/html&gt;"/>
+                </properties>
+              </component>
+              <component id="7ef6d" class="javax.swing.JButton" binding="mergeToolInto">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <borderPainted value="true"/>
+                  <text value="使用"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="cd266" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="line">
+              <color color="-2960686"/>
+            </border>
+            <children>
+              <component id="53fe7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="130"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11173216"/>
+                  <horizontalAlignment value="0"/>
+                  <icon value="png/app_icon_tool.png"/>
+                  <opaque value="true"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="b3810" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="180" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Andale Mono" size="14" style="1"/>
+                  <horizontalAlignment value="0"/>
+                  <iconTextGap value="4"/>
+                  <text value="应用图标生成工具"/>
+                  <verticalAlignment value="3"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="80992" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="180" height="60"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <text value="&lt;html&gt;&lt;center&gt;通过自定义设置生成不同分辨率下对应的应用程序图标&lt;/center&gt;&lt;/html&gt;"/>
+                </properties>
+              </component>
+              <component id="7ef6e" class="javax.swing.JButton" binding="iconToolInto">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <borderPainted value="true"/>
+                  <text value="使用"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="cd267" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="line">
+              <color color="-2960686"/>
+            </border>
+            <children>
+              <component id="53f38" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="130"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-14831549"/>
+                  <horizontalAlignment value="0"/>
+                  <icon value="png/android_resource_tool.png"/>
+                  <opaque value="true"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="b3811" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="180" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Andale Mono" size="14" style="1"/>
+                  <horizontalAlignment value="0"/>
+                  <iconTextGap value="4"/>
+                  <text value="安卓应用资源处理工具"/>
+                  <verticalAlignment value="3"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="80993" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="180" height="60"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="&lt;html&gt;&lt;center&gt;安卓应用使用图片生成selector、level-list、shape、9.png等资源&lt;/center&gt;&lt;/html&gt;"/>
+                </properties>
+              </component>
+              <component id="7ef6f" class="javax.swing.JButton" binding="androidToolInto">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <borderPainted value="true"/>
+                  <text value="使用"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <hspacer id="544e8">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+        </children>
+      </grid>
+      <grid id="851cd" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="20" left="10" bottom="50" right="10"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="88a65" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-12828863"/>
+              <text value="Copyright @ 2018 njcwking. All rights reserved."/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <vspacer id="aa8ea">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>

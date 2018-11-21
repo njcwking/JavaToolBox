@@ -1,6 +1,6 @@
 package com.njcwking.box;
 
-import com.njcwking.box.crop.swing.main.MainFrame;
+import com.njcwking.box.menu.MenuFrame;
 
 /**
  * <pre>
@@ -13,6 +13,7 @@ import com.njcwking.box.crop.swing.main.MainFrame;
  */
 public class Main {
     public static void main(String[] args) {
-        new MainFrame().setVisible(true);
+//        new MainFrame().setVisible(true);
+        new MenuFrame().setVisible(true);
     }
 }
