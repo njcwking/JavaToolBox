@@ -9,19 +9,19 @@
 			iconWidth="144" />
 		<model name="xxxhdpi" width="1440" height="2560" folder="drawable-xxxhdpi"
 			   iconWidth="192"/>
-		<model name="iPhone4,4s" width="640" height="960" folder="iPhone4 2x"
+		<model name="iPhone4,4s" width="640" height="960" folder="iPhone4 2x（640x960）"
 			   iconWidth="192" suffix="@2x"/>
-		<model name="iPhone5,5s,5c,SE" width="640" height="1136" folder="iPhone5 2x"
+		<model name="iPhone5,5s,5c,SE" width="640" height="1136" folder="iPhone5 2x（640x1136）"
 			   iconWidth="192" suffix="@2x"/>
-		<model name="iPhone6,6s,7,8" width="750" height="1334" folder="iPhone6 2x"
+		<model name="iPhone6,6s,7,8" width="750" height="1334" folder="iPhone6 2x（750x1334）"
 			   iconWidth="192" suffix="@2x"/>
-		<model name="iPhone6+,6s+,7+,8+" width="1242" height="2208" folder="iPhone6Plus 3x"
+		<model name="iPhone6+,6s+,7+,8+" width="1242" height="2208" folder="iPhone6Plus 3x（1242x2208）"
 			   iconWidth="192" suffix="@3x"/>
-		<model name="iPhoneX,XS" width="1125" height="2436" folder="iPhoneX 3x"
+		<model name="iPhoneX,XS" width="1125" height="2436" folder="iPhoneX 3x（1125x2436）"
 			   iconWidth="192" suffix="@3x"/>
-		<model name="iPhoneXR" width="828" height="1792" folder="iPhoneXR 2x"
+		<model name="iPhoneXR" width="828" height="1792" folder="iPhoneXR 2x（828x1792）"
 			   iconWidth="192" suffix="@2x"/>
-		<model name="iPhoneXS Max" width="1242" height="2688" folder="iPhoneXS Max 2x"
+		<model name="iPhoneXS Max" width="1242" height="2688" folder="iPhoneXS Max 2x（1242x2688）"
 			   iconWidth="192" suffix="@2x"/>
 	</img_config>
 	<setting>

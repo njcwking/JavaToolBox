@@ -80,17 +80,17 @@ public class MainFrame extends JFrame {
                 } else {
                     Version localVersion = VersionUtils.getVersionFromXml();
                     if (localVersion.getVersionCode() < remoteVersion.getVersionCode()) {
-                        versionItem.setText("最新版本V"+remoteVersion.getVersionName());
+                        versionItem.setText("最新版本V" + remoteVersion.getVersionName());
                         jm.setIcon(new ImageIcon(this.getClass().getResource(
                                 "/png/red_point.png")));
                         jm.setHorizontalTextPosition(JMenu.LEFT);
                         versionItem.setIcon(new ImageIcon(this.getClass().getResource(
                                 "/png/red_point.png")));
                         versionItem.setHorizontalTextPosition(JMenu.LEFT);
-                        int n = JOptionPane.showConfirmDialog(MainFrame.this, String.format("最新版本：%s\n是否更新？", remoteVersion.getVersionName()), "版本更新", JOptionPane.YES_NO_OPTION,JOptionPane.PLAIN_MESSAGE,null);
+                        int n = JOptionPane.showConfirmDialog(MainFrame.this, String.format("最新版本：%s\n是否更新？", remoteVersion.getVersionName()), "版本更新", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE, null);
                         if (n == JOptionPane.YES_OPTION) {
                             try {
-                                Desktop.getDesktop().browse(new URL("https://github.com/njcwking/JavaToolBox/blob/master/Resources/runJar").toURI());
+                                Desktop.getDesktop().browse(new URL((remoteVersion.getDownloadUrl() == null || remoteVersion.getDownloadUrl().equals("")) ? "https://github.com/njcwking/JavaToolBox/blob/master/Resources/runJar" : remoteVersion.getDownloadUrl()).toURI());
                             } catch (IOException err) {
                                 err.printStackTrace();
                             } catch (URISyntaxException err) {
@@ -155,7 +155,7 @@ public class MainFrame extends JFrame {
             public void onNext(Version version) {
                 Version localVersion = VersionUtils.getVersionFromXml();
                 if (localVersion.getVersionCode() < version.getVersionCode()) {
-                    versionItem.setText("最新版本V"+version.getVersionName());
+                    versionItem.setText("最新版本V" + version.getVersionName());
                     jm.setIcon(new ImageIcon(this.getClass().getResource(
                             "/png/red_point.png")));
                     jm.setHorizontalTextPosition(JMenu.LEFT);

@@ -13,11 +13,13 @@ public class Version {
     private int versionCode;
     private String versionName;
     private String updateTime;
+    private String downloadUrl;
 
-    public Version(int versionCode, String versionName, String updateTime) {
+    public Version(int versionCode, String versionName, String updateTime,String downloadUrl) {
         this.versionCode = versionCode;
         this.versionName = versionName;
         this.updateTime = updateTime;
+        this.downloadUrl = downloadUrl;
     }
 
     public Version() {
@@ -45,5 +47,13 @@ public class Version {
 
     public void setUpdateTime(String updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public String getDownloadUrl() {
+        return downloadUrl;
+    }
+
+    public void setDownloadUrl(String downloadUrl) {
+        this.downloadUrl = downloadUrl;
     }
 }

@@ -81,6 +81,7 @@ public class VersionUtils {
             int versionCode = 0;
             String versionName = "";
             String updateTime = "";
+            String downloadUrl = "";
             if (root != null) {
                 Element versionCodeElement = root.element("versionCode");
                 if (versionCodeElement != null) {
@@ -94,9 +95,13 @@ public class VersionUtils {
                 if (updateTimeElement != null) {
                     updateTime = updateTimeElement.getText();
                 }
+                Element downloadElement = root.element("download");
+                if (downloadElement != null) {
+                    downloadUrl = downloadElement.getText();
+                }
             }
             if (versionCode != 0 && versionName != null && updateTime != null) {
-                version = new Version(versionCode, versionName, updateTime);
+                version = new Version(versionCode, versionName, updateTime,downloadUrl);
             }
         } catch (IOException e1) {
             e1.printStackTrace();
@@ -133,6 +138,7 @@ public class VersionUtils {
         int versionCode = 0;
         String versionName = "";
         String updateTime = "";
+        String downloadUrl = "";
         if (root != null) {
             Element versionCodeElement = root.element("versionCode");
             if (versionCodeElement != null) {
@@ -146,9 +152,13 @@ public class VersionUtils {
             if (updateTimeElement != null) {
                 updateTime = updateTimeElement.getText();
             }
+            Element downloadElement = root.element("download");
+            if (downloadElement != null) {
+                downloadUrl = downloadElement.getText();
+            }
         }
         if (versionCode >=0 && versionName != null && updateTime != null) {
-            version = new Version(versionCode, versionName, updateTime);
+            version = new Version(versionCode, versionName, updateTime,downloadUrl);
         }
         return version;
     }
