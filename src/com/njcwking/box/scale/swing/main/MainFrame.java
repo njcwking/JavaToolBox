@@ -24,9 +24,26 @@ import java.net.URL;
 public class MainFrame extends JFrame {
     private JMenu jm = null;
 
+    private String srcFile;
+    private String distFile;
+    private String designSize;
+
+    private MainFrameGUI mainFrameGUI;
+
 
     public MainFrame() throws HeadlessException {
         super();
+        init();
+
+    }
+
+    public MainFrame(String srcFile,String distFile,String designSize) throws HeadlessException {
+        super();
+        init();
+        mainFrameGUI.autoScale(srcFile, distFile, designSize);
+    }
+
+    private void init() {
         Config config = null;
         try {
             config = ConfigUtils.getConfigByDefault();
@@ -34,7 +51,8 @@ public class MainFrame extends JFrame {
             e.printStackTrace();
         }
         setTitle("切图缩放工具");
-        setContentPane(new MainFrameGUI(this, config).rootPanel);
+        mainFrameGUI = new MainFrameGUI(this, config);
+        setContentPane(mainFrameGUI.rootPanel);
         //添加菜单栏
         jm = new JMenu("切图缩放工具选项");
         JMenuItem useItem = new JMenuItem("使用手册");
@@ -80,9 +98,7 @@ public class MainFrame extends JFrame {
 
         setLocationRelativeTo(getOwner());
         setLocationRelativeTo(null);
-
     }
-
 
 
     public static void main(String[] args) {

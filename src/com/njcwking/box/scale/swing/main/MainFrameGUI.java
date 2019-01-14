@@ -144,6 +144,7 @@ public class MainFrameGUI{
 
     private Disposable subscribe = null;
 
+
     public MainFrameGUI(final JFrame frame, final Config config) {
         this.mConfig = config;
         this.mFrame = frame;
@@ -316,6 +317,23 @@ public class MainFrameGUI{
             }
         });
 
+    }
+
+    public void autoScale(String srcFile,String distFile,String designSize) {
+        srcDirField.setText(srcFile);
+        outDirField.setText(distFile);
+
+        int index = -1;
+        for (ConfigItem configModel : mConfig.getSizeItem()) {
+            index++;
+            if (configModel.getName().equals(designSize)) {
+                break;
+            }
+        }
+        if (index != -1) {
+            designBox.setSelectedIndex(index);
+        }
+        okButton.doClick();
     }
 
     private void initSize() {
